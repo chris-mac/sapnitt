@@ -5,11 +5,6 @@ import dateutil.relativedelta
 import re
 import unicodedata
 
-#Open up our local file and find the table
-#mytext=open("helloworld.html")
-#soup = BeautifulSoup(mytext, "lxml")
-#table = soup.find_all("table", class_="repositories")
-
 #Function to handle weeks and months relative to now and convert into days
 def toDays(since):
   sincestr = unicode.join(u'\n',map(unicode,since))
@@ -52,5 +47,3 @@ for line in table:
 #Age4 is 4 weeks and over and needs to be translated to days
 
 mytext.close()
-#regs
-#bs4, dateutil

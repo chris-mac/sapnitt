@@ -2,9 +2,6 @@
 set -e
 set -x
 
-#TODO
-# Remove optional better (double comma?)
-
 #Set up our variables
 
 plugin="$1"

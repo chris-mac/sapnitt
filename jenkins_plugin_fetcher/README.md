@@ -3,8 +3,8 @@ Jenkins Plugin Fetcher
 
 This fetcher allows you to download and install a Jenkins plugin and its dependencies.
 The script accepts two args:
-1. plugin name in lower case
-2. version number (latest is not supported)
+-  plugin name in lower case
+-  version number (latest is not supported)
 
 ##Notes:
 

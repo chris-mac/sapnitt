@@ -31,10 +31,7 @@ installPlugin(){
   else
     #Get plugin current verion and overwrite
     currentversion="$(grep '^Plugin-Version: ' $1/META-INF/MANIFEST.MF | sed -e "s/Plugin-Version: //g")"
-    #echo $currentversion
-    #echo $2
     if version_gt $2 $currentversion; then
-      echo "yup older version"
       echo "Upgrading plugin: $1 version from $currentversion to $2"
       rm -rf $1 $1.jpi
       wget "http://updates.jenkins-ci.org/download/plugins/$1/$2/$1.hpi" -O $1.hpi
